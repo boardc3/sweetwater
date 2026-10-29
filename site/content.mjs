@@ -34,7 +34,7 @@ export const exteriors = [
   { r: 'r04_motor_court', b: 'Looking S', c: 'The north motor court and its round fountain, where the U opens.' },
   { r: 'r05_courtyard', b: 'Looking S', c: 'Inside the U: the planted courtyard.' },
   { r: 'r06_pool_day', b: 'Looking N', c: 'Up the garden axis from the end of the pool.' },
-  { r: 'r15_loggia', b: 'Looking S', c: 'The south loggia, framed on the sea.' },
+  { r: 'r15_loggia', b: 'Looking S', c: 'A south loggia framed on the sea, as this study proposes it.' },
 ];
 
 export const interiors = [

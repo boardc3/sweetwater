@@ -68,7 +68,7 @@ function page({ path, title, desc, og = 'r01_hero_aerial', body, extraHead = '',
 <button class="menu" aria-expanded="false" aria-controls="nav">Menu</button>
 <nav id="nav">${nav}</nav></header>
 <main>${body}</main>
-<footer class="foot"><div><p class="foot-a">${esc(site.address)}</p><p>${esc(site.study)}. Every image on this site is a conceptual rendering produced for this study; none is a photograph of the property. Facts are from the public record, cited on <a href="/house">The Record</a>.</p></div>
+<footer class="foot"><div><p class="foot-a">${esc(site.address)}</p><p>${esc(site.study)}. Every image on this site is a conceptual rendering produced for this study; none is a photograph of the property. Facts are from the public record and press reports, cited on <a href="/house">The Record</a>.</p></div>
 <p class="foot-s">Sceneset AI · Laguna Beach</p></footer>
 <script src="/assets/app.js" defer></script>${scripts}
 </body></html>`;
@@ -91,7 +91,7 @@ write('/', page({
   <div class="hero-t"><p class="kick">Malibu · 34.037° N</p><h1>A villa on the mesa<br><em>above the pier.</em></h1><p class="hero-s">${tag} ${esc(site.study)}</p></div>
 </section>
 <section class="intro wrap">
-  <div class="intro-l"><p class="lede">On a promontory west of Malibu Pier, a U-shaped Mediterranean house turns its back to the ridge and its terrace to the sea. Its roofs are clay tile; its garden runs down an axis to a pool with a rounded end; the slopes below are left to sage.</p>
+  <div class="intro-l"><p class="lede">On a promontory west of Malibu Pier, a U-shaped Mediterranean house turns its back to the ridge and its terrace to the sea. From the air its roofs read as terracotta tile; its garden runs down an axis to a pool with a rounded end; the slopes below are left to sage.</p>
   <p>This study renders the estate as it might be finished and furnished today. The building's footprint, roof form, orientation and grounds are taken from aerial imagery of the real site. Everything you see inside is proposed.</p></div>
   <dl class="facts">${facts}</dl>
 </section>
@@ -122,7 +122,7 @@ write('/interiors', page({
 <section class="ph-head wrap"><p class="kick">Interiors</p><h1 class="h1">Rooms that face the light</h1></section>
 <section class="explainer wrap" id="about-these-interiors">
   <h2>About these interiors</h2>
-  <p><strong>No photographs of this home's interiors are publicly available.</strong> The house was not formally listed when it changed hands in 2016 and 2017, and it sits on a private gated road. Every room on this page is therefore a <strong>conceptual rendering</strong> — an informed proposal, not a record of what is inside.</p>
+  <p><strong>We found no published photographs of this home's interiors.</strong> The house was not formally listed when it changed hands in 2016 and 2017, and it sits on a private gated road. Every room on this page is therefore a <strong>conceptual rendering</strong> — an informed proposal, not a record of what is inside.</p>
   <div class="ex-cols">
     <div><h3>What they are based on</h3><ul>
       <li>The public record: 6 bedrooms, 8 bathrooms, 14,995 sq ft (Los Angeles County Assessor).</li>
