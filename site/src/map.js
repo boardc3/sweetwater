@@ -1,0 +1,11 @@
+(function(){const d=window.MAPDATA;if(!window.L||!d)return;
+const home=d.places[0];
+const map=L.map('map',{scrollWheelZoom:false}).setView([home.lat,home.lon],16);
+const sat=L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',{maxZoom:19,attribution:'Imagery &copy; Esri, Maxar, Earthstar Geographics'}).addTo(map);
+const osm=L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:19,attribution:'&copy; OpenStreetMap contributors'});
+L.control.layers({'Aerial (Esri)':sat,'Street (OSM)':osm}).addTo(map);
+const poly=L.polygon(d.parcel,{color:'#f2b483',weight:2.5,fillColor:'#a9532f',fillOpacity:.15}).addTo(map).bindPopup('LA County Assessor parcel 4452-017-009 — approximate, not a survey');
+d.places.forEach(p=>{L.marker([p.lat,p.lon],{icon:L.divIcon({className:'',html:'<div class="pin '+p.k+'"></div>',iconSize:[18,18],iconAnchor:[9,9]})}).addTo(map).bindPopup('<b>'+p.n+'</b><br>'+p.note);});
+map.fitBounds(poly.getBounds().pad(0.9));
+map.on('click',()=>map.scrollWheelZoom.enable());map.on('mouseout',()=>map.scrollWheelZoom.disable());
+})();

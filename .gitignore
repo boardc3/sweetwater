@@ -1,0 +1,16 @@
+# dependencies
+node_modules
+
+# build output
+dist
+
+# OS cruft
+.DS_Store
+Thumbs.db
+
+# render masters stay local; the site ships web JPEGs from media/
+# the leading slash is load-bearing — a bare `renders` swallows media/renders at any depth
+/renders
+/Renders
+.vercel
+.env.local
